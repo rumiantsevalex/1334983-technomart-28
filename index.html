@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -17,8 +20,14 @@
         <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
         <a href="tel:+78125550555" aria-label="телефон">+7 (812) 555-05-55</a>
         <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-        <a href="#">Войти</a>
-        <a href="#">Регистрация</a>
+        <ul>
+          <li>  
+            <a href="#">Войти</a>
+          </li>
+          <li>  
+            <a href="#">Регистрация</a>
+          </li>
+        </ul>
         <nav>
           <ul>
             <li><a href="index.html">Главная</a></li>
@@ -33,6 +42,7 @@
     </header>
     <main>
       <section>
+        <h2 class="visually-hidden">Основные разделы</h2>
         <ul>
           <li>
             <h3>Материалы</h3>
@@ -69,7 +79,7 @@
         </div>
         <ul>
           <li>
-            <a href="#"><img src="img/bfg-9000.jpg"  width="184px" height="164px" alt="Перфоратор BOSCH BFG 9000"></a>
+            <a href="#"><img src="img/bfg-9000.jpg"  width="184" height="164" alt="Перфоратор BOSCH BFG 9000"></a>
               <h3>
                   <a href="#">Перфоратор BOSCH<br>
                   BFG 9000</a>
@@ -82,7 +92,7 @@
               </span>
           </li>
           <li>
-            <a href="#"><img src="img/bfg-3000.jpg" width="127px" height="112px" alt="Перфоратор BOSCH BFG 3000"></a>
+            <a href="#"><img src="img/bfg-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000"></a>
               <h3>
                 <a href="#">Перфоратор BOSCH<br>
                   BFG 3000</a>
@@ -95,7 +105,7 @@
               </span>
           </li>
           <li>
-            <a href="#"><img src="img/bfg-6000.jpg" width="144px" height="128px" alt="Перфоратор BOSCH BFG 6000"></a>
+            <a href="#"><img src="img/bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"></a>
               <h3>
                 <a href="#">Перфоратор BOSCH<br>
                   BFG 6000</a>
@@ -108,7 +118,7 @@
               </span>
           </li>
           <li>
-            <a href="#"><img src="img/bfg-2000.jpg" width="127px" height="112px" alt="Перфоратор BOSCH BFG 2000"></a>
+            <a href="#"><img src="img/bfg-2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000"></a>
               <h3>
                 <a href="#">Перфоратор BOSCH<br>
                   BFG 2000</a>
@@ -130,28 +140,28 @@
         </div>
           <ul>
             <li>
-              <a href="#"><img src="img/bosch.jpg" width="126px" height="37px" alt="BOSCH"></a>
+              <a href="#"><img src="img/bosch.jpg" width="126" height="37" alt="BOSCH"></a>
             </li>
             <li>
-              <a href="#"><img src="img/Makita.jpg" width="123px" height="40px" alt="MAKITA"></a>
+              <a href="#"><img src="img/makita.jpg" width="123" height="40" alt="MAKITA"></a>
             </li>
             <li>
-              <a href="#"><img src="img/DeWALT.jpg" width="146px" height="44px" alt="DeWALT"></a>
+              <a href="#"><img src="img/dewalt.jpg" width="146" height="44" alt="DeWALT"></a>
             </li>
             <li>
-              <a href="#"><img src="img/Interskol.jpg" width="200px" height="88px" alt="Интерскол"></a>
+              <a href="#"><img src="img/interskol.jpg" width="200" height="88" alt="Интерскол"></a>
             </li>
             <li>
-              <a href="#"><img src="img/Hitachi.jpg" width="169px" height="31px" alt="HITACHI"></a>
+              <a href="#"><img src="img/hitachi.jpg" width="169" height="31" alt="HITACHI"></a>
             </li>
             <li>
-              <a href="#"><img src="img/LG.jpg" width="121px" height="73px" alt="LG"></a>
+              <a href="#"><img src="img/lg.jpg" width="121" height="73" alt="LG"></a>
             </li>
             <li>
-              <a href="#"><img src="img/AEG.jpg" width="151px" height="96px" alt="AEG"></a>
+              <a href="#"><img src="img/lg.jpg" width="151" height="96" alt="AEG"></a>
             </li>
             <li>
-              <a href="#"><img src="img/Metabo.jpg" width="204px" height="69px" alt="METABO"></a>
+              <a href="#"><img src="img/metabo.jpg" width="204" height="69" alt="METABO"></a>
             </li>
           </ul>
       </section>
@@ -222,7 +232,7 @@
           Вы можете забрать товар сами, 
           заехав в наш офис:
         </p>
-        <img src="img/map.png" width="300px" height="158px" alt="карта">
+        <img src="img/map.png" width="300" height="158" alt="карта">
         <button>Заблудились? Напишите нам!</button>
       </section>
     </main>
@@ -261,6 +271,7 @@
     </footer>
 
     <section>
+      <h2 class="visually-hidden">Форма обратной связи</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
         <label for="feedback-name">Ваше имя:</label>
         <input type="text" name="name" placeholder="Имя Фамилия" id="feedback-name" required>
@@ -268,14 +279,15 @@
         <input type="email" name="e-mail" placeholder="email@example.com" id="feedback-email" required>
         <label for="feedback-text">Текст письма:</label>
         <textarea id="feedback-text" name="text" placeholder="В свободной форме" required></textarea>
-        <button type="submit">Оформить заказ</button>
+        <button type="submit">Отправить</button>
       </form>
-      <button aria-label="закрытие формы"><img src="img/icon-close.svg" width="21px" height="21px" alt="close"></button>
+      <button aria-label="закрытие формы"><img src="img/icon-close.svg" width="21" height="21" alt="close"></button>
     </section>
 
     <section>
-      <img src="img/map-big.png" width="943px" height="449px" alt="Карта">
-      <button aria-label="Закрытие карты"><img src="img/icon-close.svg" width="21px" height="21px" alt="close"></button>
+      <h2 class="visually-hidden">Карта</h2>
+      <img src="img/map-big.png" width="943" height="449" alt="Карта">
+      <button aria-label="Закрытие карты"><img src="img/icon-close.svg" width="21" height="21" alt="close"></button>
     </section>
 
   </body>
