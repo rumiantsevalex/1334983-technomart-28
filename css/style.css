@@ -1,0 +1,356 @@
+/* Colors*/
+:root {
+    --basic-black: #000000;
+    --basic-darkest-blue: #161D29;
+    --basic-social-dark-blue: #212A3A;
+    --basic-darker-blue: #293449;
+    --basic-dark-blue: #32425C;
+    --basic-light-blue: #F3F7F9;
+    --basic-dark-white: #F9F5F0;
+    --basic-white: #FFFFFF;
+    --basic-green-dark: #518534;
+    --basic-green: #63A63E;
+    --basic-green-light: #5FBB2D;
+    --basic-button-dark: #BA2732;
+    --basic-button-color: #EE3643;
+    --basic-font-transparent: rgba(255, 255, 255, 0.5);
+    --basic-font-grey: #C5C5C5;
+    --basic-font-white: #FFFFFF;
+    --basic-yellow: #FFD180;
+    --basic-border-grey: #E5E5E5;
+    --basic-border-dark-grey: #C5C5C5;
+    --basic-crossed-price: #A9A9A9;
+}
+
+body {
+    min-width: 1220px;
+    margin: 0;
+    padding: 0;
+    font-family:  "Cuprum", Arial, sans-serif ;
+    font-size: 18px;
+    line-height: 24px;
+    font-style: normal;
+    color: var(--basic-white);
+    background-color: var(--basic-white);
+}
+
+a {
+    text-decoration: none;
+    color: var(--basic-white);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+.red-button {
+    background-color: var(--basic-button-color);
+    color: var(--basic-white);
+}
+
+.red-button:active {
+    background-color: var(--basic-button-dark);
+}
+
+.white-button {
+    background-color: var(--basic-white);
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--basic-border-grey); 
+}
+
+.white-button:hover {
+    border-color: var(--basic-border-dark-grey);
+}
+
+.white-button:active {
+    border-color: var(--basic-button-color);
+}
+
+
+
+/*header*/
+
+.header-top {
+    background-color: var(--basic-darker-blue);
+
+}
+
+.main-header {
+    background-color: var(--basic-light-blue);
+}
+
+.logo {
+    text-transform: uppercase;
+    background-image: url(../img/logo-technomart.svg);
+    background-color: var(--basic-button-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 108px 18px;
+    width: 220px;
+    height: 47px;
+    text-align: center;
+    line-height: 47px;
+}
+
+.logo:active {
+    background-color: var(--basic-button-dark);
+}
+
+.header-search label:active {
+    color: var(--basic-font-transparent)
+}
+
+.header-search input {
+    background-color: transparent;
+}
+
+.header-search input:focus {
+    background-color: var(--basic-white);
+}
+
+
+.top-header-button:active {
+    background-color: var(--basic-darkest-blue);
+    color: var(--basic-font-transparent);
+}
+
+.order-button {
+    background-color: var(--basic-green);
+}
+
+.order-button:hover {
+    background-color: var(--basic-green-light);
+}
+
+.order-button:active {
+    background-color: var(--basic-green);
+    color: var(--basic-font-transparent);
+}
+
+h1 {
+    color: var(--basic-button-color);
+    font-size: 16px;
+    line-height: 23px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.header-phone {
+    color: var(--basic-button-color);
+}
+
+address {
+    color: var(--basic-dark-blue);
+}
+
+.user-button a {
+    background-color: var(--basic-font-white);
+    color: var(--basic-black);
+}
+
+.user-button a:hover {
+    color: var(--basic-button-color);
+}
+
+.user-button a:active {
+    color: var(--basic-font-grey);
+}
+
+.user-button-cabinet a{
+    color: var(--basic-dark-blue);
+}
+
+nav {
+    background-color: var(--basic-dark-blue);
+    width: 940px;
+}
+
+nav a:hover {
+    background-color: var(--basic-darker-blue);
+}
+
+nav a:active {
+    background-color: #1D2739;
+    color: var(--basic-font-transparent)
+}
+
+/*main*/
+
+.material-section {
+    background-color: #FFBF47;
+    color: var(--basic-white)
+}
+
+.tool-section {
+    background-color: #3BBCE3;
+}
+
+.tech-section {
+    background-color: #DC91D8;
+}
+
+.sale-section {
+    background-color: #8ED78F;
+}
+
+.delivery-section {
+    background-color: #FFC047;
+}
+
+/*description and contacts*/
+
+.description, .contacts {
+    color: var(--basic-black);
+}
+
+/*catalog*/
+
+.catalog-nav a{
+    color: var(--basic-black)
+}
+
+.blue-heading {
+    background-color: var(--basic-light-blue);
+    color: var(--basic-dark-blue);
+}
+
+/*catalog-filters*/
+
+.catalog-filter legend {
+    font-size: 17px;
+    line-height: 30px;
+    color: var(--basic-black);
+    text-transform: uppercase;
+}
+
+.catalog-filter label {
+    font-size: 15px;
+    line-height: 19px;
+    color: var(--basic-black);
+    text-transform: uppercase;
+}
+
+/*catalog-item*/
+
+.catalog-item h3 a {
+    color: var(--basic-black);
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.catalog-item h3 a span {
+    text-transform: uppercase;
+}
+
+.crossed-price {
+    color: var(--basic-crossed-price);
+    text-decoration: line-through;
+}
+
+.price {
+    background-image: url(../img/red-button-price.png);
+}
+
+.buy-item {
+    text-transform: uppercase;
+    background-color: var(--basic-green);
+    color: var(--basic-font-white);
+    font-size: 14px;
+    line-height: 18px;
+    border-width: 0;
+}
+
+.buy-item:hover {
+    background-color: var(--basic-green-light);
+}
+
+.buy-item:active {
+    background-color: var(--basic-green-dark);
+}
+
+.in-bookmark {
+    text-transform: uppercase;
+    color: var(--basic-dark-blue);
+    font-size: 14px;
+    line-height: 18px;
+    background-color: var(--basic-white);
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--basic-green);
+}
+
+.in-bookmark:hover {
+    border-color: var(--basic-dark-blue);
+}
+
+.in-bookmark:active {
+    opacity: 0.5; 
+}
+
+
+
+
+
+
+/*footer*/
+
+footer {
+    background-color: var(--basic-dark-blue);
+}
+
+.footer-bottom {
+    background-color: var(--basic-darker-blue);
+}
+
+.footer-logo {
+    height: 68px;
+}
+
+footer address {
+    color: var(--basic-light-blue);
+}
+
+.footer-phone {
+    color: var(--basic-light-blue);
+}
+
+.footer-sections a {
+    color: var(--basic-yellow);
+}
+
+.social-button {
+    background-color: var(--basic-social-dark-blue);
+}
+
+footer p a {
+    color: var(--basic-yellow);
+}
+
+
+/*modal-feedback*/
+
+.modal-feedback {
+    display: none   ;
+}
+
+/*modal-map*/
+
+.modal-map {
+    display: none;
+}
+
+/*modal-order*/
+
+.modal-order {
+    display: none;
+}
