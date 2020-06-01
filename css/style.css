@@ -8,6 +8,7 @@
     --basic-light-blue: #F3F7F9;
     --basic-dark-white: #F9F5F0;
     --basic-white: #FFFFFF;
+    --basic-white-transparent: rgba(255, 255, 255, 0.3); 
     --basic-green-dark: #518534;
     --basic-green: #63A63E;
     --basic-green-light: #5FBB2D;
@@ -19,7 +20,10 @@
     --basic-yellow: #FFD180;
     --basic-border-grey: #E5E5E5;
     --basic-border-dark-grey: #C5C5C5;
+    --basic-modal-grey: #F1F1F1;
     --basic-crossed-price: #A9A9A9;
+    --basic-slider-wrapper: rgba(0, 0, 0, 0.25);
+    --basic-item-border: #EAEAEA;
 }
 
 body {
@@ -46,6 +50,8 @@ img {
 
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .visually-hidden {
@@ -55,6 +61,9 @@ ul {
 .red-button {
     background-color: var(--basic-button-color);
     color: var(--basic-white);
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
 }
 
 .red-button:active {
@@ -63,9 +72,13 @@ ul {
 
 .white-button {
     background-color: var(--basic-white);
+    color: var(--basic-black);
     border-width: 1px;
     border-style: solid;
-    border-color: var(--basic-border-grey); 
+    border-color: var(--basic-border-grey);
+    font-size: 13px;
+    line-height: 18px; 
+    text-transform: uppercase;
 }
 
 .white-button:hover {
@@ -76,35 +89,22 @@ ul {
     border-color: var(--basic-button-color);
 }
 
+.wrapper {
+    min-width: 940px;
+    margin: 0 130px;
+}
 
 
 /*header*/
 
 .header-top {
     background-color: var(--basic-darker-blue);
-
 }
 
 .main-header {
     background-color: var(--basic-light-blue);
 }
 
-.logo {
-    text-transform: uppercase;
-    background-image: url(../img/logo-technomart.svg);
-    background-color: var(--basic-button-color);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 108px 18px;
-    width: 220px;
-    height: 47px;
-    text-align: center;
-    line-height: 47px;
-}
-
-.logo:active {
-    background-color: var(--basic-button-dark);
-}
 
 .header-search label:active {
     color: var(--basic-font-transparent)
@@ -145,8 +145,16 @@ h1 {
     font-weight: normal;
 }
 
+h2 {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+}
+
 .header-phone {
     color: var(--basic-button-color);
+    font-size: 21px;
+    line-height: 30px;
 }
 
 address {
@@ -156,6 +164,8 @@ address {
 .user-button a {
     background-color: var(--basic-font-white);
     color: var(--basic-black);
+    font-size: 21px;
+        line-height: 21px;
 }
 
 .user-button a:hover {
@@ -186,10 +196,15 @@ nav a:active {
 
 /*main*/
 
+
+
 .material-section {
     background-color: #FFBF47;
     color: var(--basic-white)
 }
+
+
+/*sections*/
 
 .tool-section {
     background-color: #3BBCE3;
@@ -207,10 +222,122 @@ nav a:active {
     background-color: #FFC047;
 }
 
+.main-sections {
+    min-width: 940px;
+    margin: 0 130px;
+}
+
+.main-sections h3 {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.section-button {
+    font-size: 14px;
+    line-height: 18px;
+    background-color: var(--basic-white-transparent);
+}
+
+.sections-slider {
+    background-image: url(../img/slider-background.jpg);
+    background-repeat: no-repeat;
+    min-width: 620px;
+    min-height: 266px;
+
+}
+
+.sections-slider h3 {
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.slider-wrapper {
+    width: 620px;
+    height: 104px;
+    background-color: var(--basic-slider-wrapper);
+
+}
+
+/*popular*/
+
+.popular {
+    min-width: 940px;
+    margin: 0 130px;
+}
+
+.popular-wrapper {
+    background-color: var(--basic-dark-white);
+}
+
+.popular-wrapper h2 {
+    color: var(--basic-dark-blue);
+}
+
+.popular-logo {
+    width: 220px;
+    height: 145px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--basic-item-border);
+    text-align: center;
+}
+
+
+/*services*/
+
+.services {
+    min-width: 940px;
+    margin: 0 130px;
+    color: var(--basic-black);
+}
+
+.services-wrapper {
+    background-color: var(--basic-light-blue);
+}
+
+.services p {
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.service-point {
+    background-color: var(--basic-dark-blue);
+    color: var(--basic-white);
+    width: 240px;
+    height: 61px;
+    font-size: 21px;
+    line-height: 30px;
+}
+
+.service-point:hover {
+    background-color: var(--basic-white);
+    color: var(--basic-dark-blue);
+}
+
+.services h3 {
+    font-size: 30px;
+    line-height: 30px;
+    color: var(--basic-dark-blue);
+}
+
+
+
+
 /*description and contacts*/
 
 .description, .contacts {
+    min-width: 940px;
+    margin: 0 130px;
     color: var(--basic-black);
+}
+
+.description p {
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.description li {
+
 }
 
 /*catalog*/
@@ -223,6 +350,8 @@ nav a:active {
     background-color: var(--basic-light-blue);
     color: var(--basic-dark-blue);
 }
+
+
 
 /*catalog-filters*/
 
@@ -242,23 +371,36 @@ nav a:active {
 
 /*catalog-item*/
 
-.catalog-item h3 a {
+.item {
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--basic-item-border);
+    width: 220px;
+    min-height: 318px;
+    text-align: center;
+}
+
+.item a {
     color: var(--basic-black);
     line-height: 20px;
     font-weight: bold;
 }
 
-.catalog-item h3 a span {
+.item span {
     text-transform: uppercase;
 }
 
 .crossed-price {
     color: var(--basic-crossed-price);
     text-decoration: line-through;
+    font-size: 17px;
+    line-height: 18px;
 }
 
 .price {
     background-image: url(../img/red-button-price.png);
+    font-size: 17px;
+    line-height: 18px;
 }
 
 .buy-item {
@@ -298,7 +440,20 @@ nav a:active {
 }
 
 
+/*pages*/
 
+.your-page {
+    background-color: var(--basic-button-color  );
+}
+
+/*couple-words*/
+
+.couple-words {
+    background-color: var(--basic-light-blue);
+    color: var(--basic-black);
+    font-size: 13px;
+    line-height: 24px;
+}
 
 
 
@@ -312,10 +467,6 @@ footer {
     background-color: var(--basic-darker-blue);
 }
 
-.footer-logo {
-    height: 68px;
-}
-
 footer address {
     color: var(--basic-light-blue);
 }
@@ -324,23 +475,32 @@ footer address {
     color: var(--basic-light-blue);
 }
 
-.footer-sections a {
-    color: var(--basic-yellow);
-}
-
 .social-button {
     background-color: var(--basic-social-dark-blue);
 }
 
-footer p a {
+.yellow-link {
     color: var(--basic-yellow);
 }
+
+
+/*modal*/
+
+.modal-buttons {
+    background-color: var(--basic-modal-grey);
+}
+
+.modal {
+    background-color: var(--basic-white);
+    border-color: var(--basic-button-color);
+    border-top: 7px;
+}   
 
 
 /*modal-feedback*/
 
 .modal-feedback {
-    display: none   ;
+    display: none ;
 }
 
 /*modal-map*/
@@ -353,4 +513,6 @@ footer p a {
 
 .modal-order {
     display: none;
+    
 }
+
