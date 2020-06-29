@@ -33,7 +33,7 @@ body {
   min-width: 1220px;
   margin: 0;
   padding: 0;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-style: normal;
@@ -104,7 +104,7 @@ ul {
 
 .white-button {
   background-color: var(--basic-white);
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: var(--basic-black);
   border-width: 1px;
   border-style: solid;
@@ -515,7 +515,7 @@ nav a:active {
 }
 
 .sections-slider {
-  background-image: url(../img/slider-background.jpg);
+  
   background-repeat: no-repeat;
   min-width: 620px;
   min-height: 266px;
@@ -525,6 +525,18 @@ nav a:active {
   grid-row-end: 4;
 }
 
+.first-slider {
+  background-image: url(../img/slider-background.jpg);
+}
+
+.second-slider {
+  background-image: url(../img/slider-background-2.jpg);
+
+}
+
+.no-slider {
+  display: none;
+}
 
 /*main-sections decor*/
 
@@ -876,7 +888,7 @@ nav a:active {
 .contacts p {
   font-size: 13px;
   line-height: 24px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   margin-bottom: 1px;
 }
 
@@ -973,7 +985,7 @@ nav a:active {
   grid-template-columns: 220px 220px 220px 220px;
   grid-template-rows: 38px 318px 318px 318px;
   gap: 20px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 
@@ -1284,11 +1296,11 @@ fieldset {
 }
 
 .price-controls input {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   width: 95px;
   height: 38px;
   text-align: center;
-  color: #283136;
+  color: var(--basic-black);
   border: none;
   border-radius: 5px;
   background: #f1f1f1;
@@ -1409,7 +1421,7 @@ fieldset {
   text-transform: uppercase;
   background-color: var(--basic-green);
   color: var(--basic-font-white);
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   border-width: 0;
@@ -1446,7 +1458,7 @@ fieldset {
 .item-button .in-bookmark {
   text-transform: uppercase;
   color: var(--basic-dark-blue);
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   background-color: var(--basic-white);
@@ -1578,6 +1590,7 @@ footer address {
 .footer-bottom-flex {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 
@@ -1644,13 +1657,11 @@ footer address {
   width: 640px;
   min-height: 430px;
   border-top: 7px solid var(--basic-button-color);
-  outline: red solid;
   background-color: var(--basic-white);
 
   position: absolute;
   top: -30px;
   left: -520px;
-  
 
 }
 
