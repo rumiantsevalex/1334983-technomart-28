@@ -25,6 +25,17 @@
   --basic-slider-wrapper: rgba(0, 0, 0, 0.25);
   --basic-item-border: #eaeaea;
   --basic-service-point-light-blue: #405069;
+  --basic-nav-a-active: #1D2739;
+  --basic-material-section: #ffbf47;
+  --basic-tool-section: #3bbce3;
+  --basic-tech-section: #dc91d8;
+  --basic-sale-section: #8ed78f;
+  --basic-delivery-section: #ffc047;
+  --basic-scale-background: #d7dcde;
+  --basic-bar: #00ca74;
+  --basic-toogle-background: #ababab;
+  --basic-toogle-shadow: #cfcfcf;
+  --basic-item-button-shadow: #367315;
 }
 
 /*Commons*/
@@ -435,7 +446,7 @@ nav a:hover {
 }
 
 nav a:active {
-  background-color: #1d2739;
+  background-color: var(--basic-nav-a-active);
   color: var(--basic-font-transparent);
 }
 
@@ -479,7 +490,7 @@ nav a:active {
 }
 
 .material-section {
-  background-color: #ffbf47;
+  background-color: var(--basic-material-section);
   color: var(--basic-white);
   position: relative;
 }
@@ -495,21 +506,21 @@ nav a:active {
 }
 
 .tool-section {
-  background-color: #3bbce3;
+  background-color: var(--basic-tool-section);
 }
 
 .tech-section {
-  background-color: #dc91d8;
+  background-color: var(--basic-tech-section);
 }
 
 .sale-section {
-  background-color: #8ed78f;
+  background-color: var(--basic-sale-section);
   grid-row-start: 2;
   grid-column-start: 3;
 }
 
 .delivery-section {
-  background-color: #ffc047;
+  background-color: var(--basic-delivery-section);
   grid-row-start: 3;
   grid-column-start: 3;
 }
@@ -1236,19 +1247,19 @@ fieldset {
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
-  background-color: #f1f1f1;
+  background-color: var(--basic-modal-grey);
   border-radius: 5px;
 }
 
 .range-controls .scale {
   height: 2px;
-  background: #d7dcde;
+  background: var(--basic-scale-background);
 }
 
 .range-controls .bar {
   width: 80%;
   height: 2px;
-  background: #00ca74;
+  background: var(--basic-bar);
 }
 
 .range-controls .toggle {
@@ -1258,10 +1269,10 @@ fieldset {
   width: 4px;
   height: 4px;
   padding: 0;
-  border: 8px solid #ffffff;
-  background-color: #ababab;
+  border: 8px solid var(--basic-white);
+  background-color: var(--basic-toogle-background);
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
+  box-shadow: 0 2px 1px 0 var(--basic-toogle-shadow);
   cursor: pointer;
 }
 
@@ -1303,7 +1314,7 @@ fieldset {
   color: var(--basic-black);
   border: none;
   border-radius: 5px;
-  background: #f1f1f1;
+  background: var(--basic-modal-grey);
   font-family: inherit;
   font-size: inherit;
 }
@@ -1431,7 +1442,7 @@ fieldset {
   width: 135px;
   height: 38px;
   margin-bottom: 10px;
-  box-shadow: inset 0px -3px 0px #367315;
+  box-shadow: inset 0px -3px 0px var(--basic-item-button-shadow);
   border-radius: 2px;
   position: relative;
 }
