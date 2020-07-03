@@ -530,7 +530,7 @@ nav a:active {
 }
 
 .second-slider {
-  background-image: url(../img/slider-background-2.jpg);
+  background-image: url(../img/slider-background-drill.jpg);
 
 }
 
@@ -1407,7 +1407,6 @@ fieldset {
 }
 
 .item:hover .item-button {
-  display: block;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1620,6 +1619,27 @@ footer address {
   padding-top: 6px;
 }
 
+.social-label {
+  width: 44px;
+  height: 44px;
+  background-repeat: no-repeat;
+}
+
+.vkontakte {
+  background-image: url(../img/icon-vk.svg);
+  background-position: center 11px;
+}
+
+.facebook {
+  background-image: url(../img/icon-fb.svg);
+  background-position: center 8px;
+}
+
+.instagram {
+  background-image: url(../img/icon-insta.svg);
+  background-position: center 9px;
+}
+
 .yellow-link {
   color: var(--basic-yellow);
 }
@@ -1813,7 +1833,17 @@ footer address {
   left: 60px;
 }
 
-
+.close-button {
+  background-image: url(../img/icon-close.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: none;
+}
 
 .modal-order img {
   position: absolute;
